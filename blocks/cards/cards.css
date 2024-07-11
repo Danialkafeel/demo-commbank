@@ -1,84 +1,31 @@
-
-.cards-container {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  flex-wrap: wrap;
-}
-
-.card {
-  background: #ffffff;
-  border: 1px solid #e0e0e0;
-  border-radius: 8px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 16px;
-  width: 32%;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between; /* Ensures button goes to bottom */
-}
-
-.card-image-container {
-  text-align: center;
-  margin-bottom: 16px;
-}
-
-.card-image-container picture img {
-  width: 100px; /* Increase the image width */
-}
-
-.card-content-container {
-  flex: 1;
-}
-
-.card-content-container h3 {
-  font-size: 1.2em;
-  margin-top: 0;
-  margin-bottom: 8px;
-}
-
-.card-content-container ul {
-  padding-left: 20px;
+.cards > ul {
+  list-style: none;
   margin: 0;
-  margin-bottom: 16px;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(278px, 1fr));
+  grid-gap: 16px;
 }
 
-.card-content-container ul li {
-  margin-bottom: 8px;
+.cards > ul > li {
+  border: 1px solid var(--dark-color);
+  background-color: var(--background-color);
 }
 
-.card-content-container p {
-  margin-bottom: 16px;
+.cards .cards-card-body {
+  margin: 16px;
 }
 
-.card-content-container a {
-  color: #007bff;
-  text-decoration: none;
+.cards .cards-card-image {
+  line-height: 0;
 }
 
-.card-content-container a:hover {
-  text-decoration: underline;
+.cards .cards-card-body > *:first-child {
+  margin-top: 0;
 }
 
-.button-container {
-  display: flex;
-  justify-content: center;
-  margin-top: 16px; /* Add space above the button */
-}
-
-.apply-now-button {
-  display: inline-block;
-  background: #ffcc00;
-  color: #000;
-  text-align: center;
-  border: none;
-  border-radius: 4px;
-  padding: 10px 20px;
-  text-decoration: none;
-  font-weight: bold;
-}
-
-.apply-now-button:hover {
-  background-color: #e6b800; /* Slightly darken the background on hover */
+.cards > ul > li img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
 }
