@@ -1,6 +1,2 @@
 mountpoints:
-  /:
-    url: "https://author-p137653-e1386691.adobeaemcloud.com/bin/franklin.delivery/Danialkafeel/demo-commbank/main"
-    type: "markup"
-    suffix: ".html"
-  
+  /: https://adobe.sharepoint.com/sites/HelixScreensProjects/Shared%20Documents/danial-demo/demo-commbank
